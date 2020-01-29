@@ -17,6 +17,9 @@ window.addEventListener("load", () => {
       const active = document.querySelectorAll(".active");
       active[0].classList.remove("active");
       ev.target.classList.add("active");
+
+      const category = ev.target.innerHTML.toLowerCase();
+      category === "all" ? grid.filter("[data-categories]") : grid.filter(`[data-categories="${category}"]`);
     })
   });
 
