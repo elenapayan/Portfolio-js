@@ -1,0 +1,29 @@
+.grid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 1s;
+  &-items {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    @media all and (max-width: 768px) {
+      width: calc(50% - 20px);
+    }
+    &-content {
+      position: relative;
+    }
+    &-images {
+      background-size: contain;
+      width: 100%;
+      border-radius: 10px;
+      cursor: pointer;
+      vertical-align: top;
+    }
+  }
+}
+.image-loaded {
+  opacity: 1;
+}

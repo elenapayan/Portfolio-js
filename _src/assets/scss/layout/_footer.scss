@@ -1,0 +1,43 @@
+.social-networks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.icon {
+  &-container {
+    display: flex;
+    justify-content: center;
+  }
+  &-element:hover {
+    animation: icon 0.5s ease;
+  }
+}
+.fab {
+  font-size: 35px;
+  margin: 15px;
+}
+.linkedin {
+  color: #0077b5;
+}
+.github {
+  color: black;
+}
+.footer-paragraph {
+  color: #9b9b9b;
+  text-align: center;
+  & span {
+    color: grey;
+  }
+}
+
+@keyframes icon {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}

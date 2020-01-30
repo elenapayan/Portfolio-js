@@ -1,0 +1,36 @@
+.header {
+  &-container {
+    text-align: center;
+    padding: 40px 0;
+  }
+  &-subtitle {
+    color: #9b9b9b;
+  }
+  &-input {
+    margin: 40px 0 20px 0;
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: none;
+    font-size: 16px;
+    @media all and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  &-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &-links {
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-weight: 700;
+    &.active {
+      color: black;
+    }
+  }
+}
