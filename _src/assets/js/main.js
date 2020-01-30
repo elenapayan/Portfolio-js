@@ -27,9 +27,11 @@ window.addEventListener("load", () => {
 
   //Filtro por etiqueta en el input//
   document.querySelector("#header-input").addEventListener("input", ev => {
-    const search = ev.target.value;
+    const search = ev.target.value.toLowerCase();
     grid.filter(item => item.getElement().dataset.label.includes(search));
+
   });
+
 
   //Listeners en las imágenes//
   const overlay = document.getElementById("overlay-container");
