@@ -1,110 +1,146 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Portfolio-Elena Payán</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dda073099d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../assets/css/main.css">
+    </head>
+    
+    <body>
+        <div class="body-container">
+            <header class="header-container">
+                <div>
+                     <h1>Elena Payán</h1>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio-Elena Payán</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/dda073099d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/css/main.css">
-</head>
+                    <p class="header-subtitle">Front-end Developer</p>
+                </div>
+                <form action="">
+                    <input class="header-input" id="header-input" type="text" placeholder="Search...">
+                </form>
+                <div class="header-categories" id="categories"> <a class="header-links active" href="#">All</a>
+ <a class="header-links"
+                    href="#">Animals</a>
+ <a class="header-links" href="#">Monuments</a>
+ <a class="header-links"
+                    href="#">Landscapes</a>
 
-<body>
-    <div class="body-container">
-        <header class="header-container">
-            <div>
-                <h1>Elena Payán</h1>
+                </div>
+            </header>
+            <main class="main-container">
+                <section class="grid" id="grid">
+                    <div class="grid-items" data-categories="monuments" data-label="monuments cities 'big ben'"
+                    data-description="Big Ben">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Big Ben_opt.jpg" alt="Big Ben">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="landscapes" data-label="landscapes nature canyon"
+                    data-description="Canyon">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Canyon_opt.jpg" alt="Canyon">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="landscapes" data-label="landscapes nature cliff"
+                    data-description="Cliff">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Cliff_opt.jpg" alt="Cliff">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="animals" data-label="animals nature elefant"
+                    data-description="Elefant">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Elefant_opt.jpg" alt="Elefant">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="animals" data-label="animals nature flamingo"
+                    data-description="Flamingo">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Flamingo_opt.jpg"
+                            alt="Flamingo">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="landscapes" data-label="landscapes nature lake"
+                    data-description="Lake">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Lake_opt.jpg" alt="Lake">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="animals" data-label="animals nature monkey"
+                    data-description="Monkey">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Monkey_opt.jpg" alt="Monkey">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="animals" data-label="animals nature parrot"
+                    data-description="Parrot">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Parrot_opt.jpg" alt="Parrot">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="monuments" data-label="monuments cities sevilla"
+                    data-description="Sevilla">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Sevilla_opt.jpg" alt="Sevilla">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="animals" data-label="animals nature squirrel"
+                    data-description="Squirrel">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Squirrel_opt.jpg"
+                            alt="Squirrel">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="monuments" data-label="monuments cities tah-mahal"
+                    data-description="Tah-Mahal">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Tah Mahal_opt.jpg"
+                            alt="Tah-Mahal">
+                        </div>
+                    </div>
+                    <div class="grid-items" data-categories="monuments" data-label="monuments cities 'tower eiffel'"
+                    data-description="Tower Eiffel">
+                        <div class="grid-items-content">
+                            <img class="grid-items-images" src="./assets/images/Torre Eiffel_opt.jpg"
+                            alt="Tower Eiffel">
+                        </div>
+                    </div>
+                </section>
+                <section class="overlay-container" id="overlay-container">
+                    <div class="overlay-images-container">
+                        <button id="btn-close"><i class="far fa-times-circle"></i>
 
-                <p>Front-end Developer</p>
-            </div>
-            <form action="">
-                <input class="header-input" id="header-input" type="text" placeholder="Search...">
-            </form>
-            <div class="header-categories" id="categories"> <a class="header-links active" href="#">All</a>
-                <a class="header-links" href="#">Animals</a>
-                <a class="header-links" href="#">Monuments</a>
-                <a class="header-links" href="#">Landscapes</a>
+                        </button>
+                        <img class="overlay-image" src="" alt="">
+                    </div>
+                    <p class="overlay-description"></p>
+                </section>
+            </main>
+            <footer class="footer-container">
+                <div class="social-networks">
+                    <div class="icon-container">
+                        <div class="icon-element"> <a href="https://www.linkedin.com/in/elenapayan/" target="_blank" class="linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
 
-            </div>
-        </header>
-        <main class="main-container">
-            <section class="grid" id="grid">
-                <div class="grid-items" data-categories="monuments" data-label="monuments cities 'big ben'" data-description="Big Ben">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Big Ben_opt.jpg" alt="Big Ben">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="landscapes" data-label="landscapes nature canyon" data-description="Canyon">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Canyon_opt.jpg" alt="Canyon">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="landscapes" data-label="landscapes nature cliff" data-description="Cliff">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Cliff_opt.jpg" alt="Cliff">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="animals" data-label="animals nature elefant" data-description="Elefant">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Elefant_opt.jpg" alt="Elefant">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="animals" data-label="animals nature flamingo" data-description="Flamingo">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Flamingo_opt.jpg" alt="Flamingo">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="landscapes" data-label="landscapes nature lake" data-description="Lake">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Lake_opt.jpg" alt="Lake">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="animals" data-label="animals nature monkey" data-description="Monkey">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Monkey_opt.jpg" alt="Monkey">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="animals" data-label="animals nature parrot" data-description="Parrot">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Parrot_opt.jpg" alt="Parrot">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="monuments" data-label="monuments cities sevilla" data-description="Sevilla">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Sevilla_opt.jpg" alt="Sevilla">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="animals" data-label="animals nature squirrel" data-description="Squirrel">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Squirrel_opt.jpg" alt="Squirrel">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="monuments" data-label="monuments cities tah-mahal" data-description="Tah-Mahal">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Tah Mahal_opt.jpg" alt="Tah-Mahal">
-                    </div>
-                </div>
-                <div class="grid-items" data-categories="monuments" data-label="monuments cities 'tower eiffel'" data-description="Tower Eiffel">
-                    <div class="grid-items-content">
-                        <img class="grid-items-images" src="../../assets/images/Torre Eiffel_opt.jpg" alt="Tower Eiffel">
-                    </div>
-                </div>
-            </section>
-            <section class="overlay-container" id="overlay-container">
-                <div class="overlay-images-container">
-                    <button id="btn-close"><i class="far fa-times-circle"></i>
+                        </div>
+                        <div class="icon-element"> <a href="https://github.com/elenapayan" target="_blank" class="github">
+          <i class="fab fa-github-square"></i>
+        </a>
 
-                    </button>
-                    <img class="overlay-image" src="" alt="">
+                        </div>
+                    </div>
+                    <p class="footer-paragraph">Made by <span>Elena Payán</span>, visit my social networks!</p>
                 </div>
-                <p class="overlay-description"></p>
-            </section>
-        </main>
-    </div>
-    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
-    <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
-    <script src="../assets/js/main.js"></script>
-</body>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+        <script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+    </body>
 
 </html>
