@@ -32,7 +32,7 @@ window.addEventListener("load", () => {
   });
 
   //Listeners en las imágenes//
-  const overlay = document.getElementById("overlay");
+  const overlay = document.getElementById("overlay-container");
   document.querySelectorAll(".grid-items-images").forEach(element => {
     element.addEventListener("click", () => {
       const route = element.getAttribute("src");
@@ -50,6 +50,6 @@ window.addEventListener("load", () => {
 
   //Listeners del overlay//
   overlay.addEventListener("click", ev => {
-    ev.target.id === "overlay" ? overlay.classList.remove("active") : "";
+    ev.target.id === "overlay-container" ? overlay.classList.remove("active") : "";
   })
 });
