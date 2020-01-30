@@ -149,6 +149,7 @@
 }
 .footer-paragraph {
   color: #9b9b9b;
+  text-align: center;
   & span {
     color: grey;
   }
@@ -160,5 +161,15 @@
   }
   to {
     transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+//MEDIAQUERIES//
+@media all and (max-width: 768px) {
+  .grid-items {
+    width: calc(50% - 20px);
+  }
+  .header-input {
+    width: 100%;
   }
 }
